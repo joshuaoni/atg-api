@@ -17,7 +17,7 @@ const handleRegister = (req, res, db, bcrypt) => {
         })
         .catch(err => res.status(404).json('Email already registered'))
     } else {
-        // passwords entered donot match
+        // passwords entered do not match
         res.json('Mismatch');
     }
 }
